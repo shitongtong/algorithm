@@ -9,7 +9,9 @@ package cn.stt.algorithm.algs4;
 public class Selection {
     public static void main(String[] args) {
         String[] a = {"S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"};
+        long startTime = System.nanoTime();
         sort(a);
+        System.out.println("time:" + (System.nanoTime() - startTime));
         assert isSorted(a);
         show(a);
     }
